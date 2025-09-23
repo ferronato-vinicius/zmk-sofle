@@ -47,21 +47,6 @@
             bindings = <&to 4>;
             key-positions = <56 52>;
         };
-
-        sql-select {
-            bindings = <&sqlselectfrom>;
-            key-positions = <28 16>;
-            layers = <2>;
-        };
-    };
-
-    macros {
-        sqlselectfrom: sqlselectfrom {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E)>;
-            label = "SQLSELECTFROM";
-        };
     };
 
     keymap {
