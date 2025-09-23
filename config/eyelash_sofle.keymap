@@ -75,11 +75,18 @@
             label = "SQL_CREATE";
         };
 
-        SQL_INSERT_INTO_HAHAHAHHA: SQL_INSERT_INTO_HAHAHAHHA {
+        SQL_INSERT: SQL_INSERT_INTO_HAHAHAHHA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&none &kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp UNDER &kp N &kp A &kp M &kp E &kp SPACE &kp LPAR &kp C &kp O &kp L &kp U &kp M &kp N &kp N1 &kp COMMA &kp SPACE &kp C &kp O &kp L &kp U &kp M &kp N &kp N2 &kp RPAR &kp SPACE &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N1 &kp SQT &kp COMMA &kp SPACE &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N2 &kp SQT &kp RPAR>;
             label = "SQL_INSERT_INTO_HAHAHAHHA";
+        };
+
+        SQL_OVER: SQL_OVER {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(O) &kp LS(V) &kp LS(E) &kp LS(R) &kp SPACE &kp LPAR &kp LS(P) &kp LS(A) &kp LS(R) &kp LS(T) &kp LS(I) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp C &kp N1 &kp SPACE &kp LS(O) &kp LS(R) &kp LS(D) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp C &kp N2 &kp SPACE &kp LS(R) &kp LS(O) &kp LS(W) &kp LS(S) &kp SPACE &kp LS(B) &kp LS(E) &kp LS(T) &kp LS(W) &kp LS(E) &kp LS(E) &kp LS(N) &kp SPACE &kp LS(U) &kp LS(N) &kp LS(B) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(D) &kp LS(E) &kp LS(D) &kp SPACE &kp LS(P) &kp LS(R) &kp LS(E) &kp LS(C) &kp LS(E) &kp LS(D) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(A) &kp LS(N) &kp LS(D) &kp SPACE &kp LS(C) &kp LS(U) &kp LS(R) &kp LS(R) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp LS(R) &kp LS(O) &kp LS(W) &kp RPAR &kp SPACE &kp LS(A) &kp LS(S) &kp SPACE>;
+            label = "SQL_OVER";
         };
     };
 
