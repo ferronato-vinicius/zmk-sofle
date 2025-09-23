@@ -55,6 +55,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E) &kp SPACE>;
             label = "SQL_SELECT_FROM";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
 
         rgb_pulse: rgb_pulse {
@@ -73,6 +75,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp LS(R) &kp LS(E) &kp LS(A) &kp LS(T) &kp LS(E) &kp SPACE &kp LS(T) &kp LS(A) &kp LS(B) &kp LS(L) &kp LS(E) &kp SPACE &kp M &kp Y &kp UNDER &kp D &kp A &kp T &kp A &kp B &kp A &kp S &kp E &kp DOT &kp M &kp Y &kp UNDER &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LPAR &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp I &kp D &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp N &kp A &kp M &kp E &kp SPACE &kp LS(S) &kp LS(T) &kp LS(R) &kp LS(I) &kp LS(N) &kp LS(G) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp C &kp R &kp E &kp A &kp T &kp E &kp D &kp UNDER &kp A &kp T &kp SPACE &kp LS(T) &kp LS(I) &kp LS(M) &kp LS(E) &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(M) &kp LS(P) &kp RET &kp RPAR &kp RET &kp LS(U) &kp LS(S) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(D) &kp LS(E) &kp LS(L) &kp LS(T) &kp LS(A) &kp RET &kp LS(C) &kp LS(O) &kp LS(M) &kp LS(M) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp SQT &kp LS(M) &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp LS(D) &kp E &kp L &kp T &kp A &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E &kp D &kp SPACE &kp I &kp N &kp SPACE &kp LS(D) &kp A &kp T &kp A &kp B &kp R &kp I &kp C &kp K &kp S &kp MINUS &kp M &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp S &kp T &kp O &kp R &kp A &kp G &kp E &kp SQT &kp RET>;
             label = "SQL_CREATE";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
 
         SQL_INSERT: SQL_INSERT {
@@ -80,6 +84,8 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp UNDER &kp N &kp A &kp M &kp E &kp SPACE &kp LPAR &kp C &kp O &kp L &kp U &kp M &kp N &kp N1 &kp COMMA &kp SPACE &kp C &kp O &kp L &kp U &kp M &kp N &kp N2 &kp RPAR &kp SPACE &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N1 &kp SQT &kp COMMA &kp SPACE &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N2 &kp SQT &kp RPAR>;
             label = "SQL_INSERT";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
 
         SQL_OVER: SQL_OVER {
@@ -87,6 +93,8 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(O) &kp LS(V) &kp LS(E) &kp LS(R) &kp SPACE &kp LPAR &kp LS(P) &kp LS(A) &kp LS(R) &kp LS(T) &kp LS(I) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp C &kp N1 &kp SPACE &kp LS(O) &kp LS(R) &kp LS(D) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp C &kp N2 &kp SPACE &kp LS(R) &kp LS(O) &kp LS(W) &kp LS(S) &kp SPACE &kp LS(B) &kp LS(E) &kp LS(T) &kp LS(W) &kp LS(E) &kp LS(E) &kp LS(N) &kp SPACE &kp LS(U) &kp LS(N) &kp LS(B) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(D) &kp LS(E) &kp LS(D) &kp SPACE &kp LS(P) &kp LS(R) &kp LS(E) &kp LS(C) &kp LS(E) &kp LS(D) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(A) &kp LS(N) &kp LS(D) &kp SPACE &kp LS(C) &kp LS(U) &kp LS(R) &kp LS(R) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp LS(R) &kp LS(O) &kp LS(W) &kp RPAR &kp SPACE &kp LS(A) &kp LS(S) &kp SPACE>;
             label = "SQL_OVER";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
     };
 
