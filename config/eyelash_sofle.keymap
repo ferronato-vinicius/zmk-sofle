@@ -98,6 +98,18 @@
         };
     };
 
+    on-startup {
+        compatible = "zmk,on-startup";
+        label = "ZMK_ON_STARTUP";
+        bindings = <&rgb_pulse>;
+    };
+
+    on-wake {
+        compatible = "zmk,on-wake";
+        label = "ZMK_ON_WAKE";
+        bindings = <&rgb_pulse>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
