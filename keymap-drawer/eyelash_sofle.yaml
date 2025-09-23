@@ -328,6 +328,3 @@ layers:
 combos:
 - p: [56, 52]
   k: {t: layer4, h: toggle}
-- p: [28, 16]
-  k: '&sqlselectfrom'
-  l: [layer2]
