@@ -74,6 +74,13 @@
             bindings = <&kp LS(C) &kp LS(R) &kp LS(E) &kp LS(A) &kp LS(T) &kp LS(E) &kp SPACE &kp LS(T) &kp LS(A) &kp LS(B) &kp LS(L) &kp LS(E) &kp SPACE &kp M &kp Y &kp UNDER &kp D &kp A &kp T &kp A &kp B &kp A &kp S &kp E &kp DOT &kp M &kp Y &kp UNDER &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LPAR &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp I &kp D &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp N &kp A &kp M &kp E &kp SPACE &kp LS(S) &kp LS(T) &kp LS(R) &kp LS(I) &kp LS(N) &kp LS(G) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp C &kp R &kp E &kp A &kp T &kp E &kp D &kp UNDER &kp A &kp T &kp SPACE &kp LS(T) &kp LS(I) &kp LS(M) &kp LS(E) &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(M) &kp LS(P) &kp RET &kp RPAR &kp RET &kp LS(U) &kp LS(S) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(D) &kp LS(E) &kp LS(L) &kp LS(T) &kp LS(A) &kp RET &kp LS(C) &kp LS(O) &kp LS(M) &kp LS(M) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp SQT &kp LS(M) &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp LS(D) &kp E &kp L &kp T &kp A &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E &kp D &kp SPACE &kp I &kp N &kp SPACE &kp LS(D) &kp A &kp T &kp A &kp B &kp R &kp I &kp C &kp K &kp S &kp MINUS &kp M &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp S &kp T &kp O &kp R &kp A &kp G &kp E &kp SQT &kp RET>;
             label = "SQL_CREATE";
         };
+
+        SQL_INSERT_INTO_HAHAHAHHA: SQL_INSERT_INTO_HAHAHAHHA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "SQL_INSERT_INTO_HAHAHAHHA";
+        };
     };
 
     keymap {
