@@ -126,7 +126,7 @@
 &trans  &trans        &trans        &trans          &trans        &trans          &bl BL_DEC  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans          &trans        &trans          &trans      &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &bl BL_SET 100  &bl BL_ON     &bl BL_TOG      &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&to 1   &trans        &trans        &trans          &trans        &trans          &trans      &kp SPACE  &trans  &trans  &trans  &trans
+&to 0   &trans        &trans        &trans          &trans        &trans          &trans      &kp SPACE  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer4";
