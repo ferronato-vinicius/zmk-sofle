@@ -122,9 +122,9 @@
         SQL {
             bindings = <
 &kp TILDE  &trans      &trans            &trans       &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans       &kp F9     &kp F10      &trans
-&trans     &trans      &trans            &trans       &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &SQL_INSERT  &kp F12    &kp UNDER    &kp PLUS
+&trans     &trans      &trans            &trans       &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &SQL_INSERT  &SQL_OVER  &kp UNDER    &kp PLUS
 &trans     &trans      &SQL_SELECT_FROM  &trans       &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans       &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset  &trans            &bootloader  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset   &soft_off  &bootloader  &trans
+&trans     &sys_reset  &trans            &SQL_CREATE  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset   &soft_off  &bootloader  &trans
 &trans     &trans      &trans            &trans       &trans  &trans    &mkp LCLK        &trans  &trans  &trans       &trans     &trans
             >;
 
