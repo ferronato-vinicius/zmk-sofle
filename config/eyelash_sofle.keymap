@@ -75,11 +75,11 @@
             label = "SQL_CREATE";
         };
 
-        SQL_INSERT: SQL_INSERT_INTO_HAHAHAHHA {
+        SQL_INSERT: SQL_INSERT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp UNDER &kp N &kp A &kp M &kp E &kp SPACE &kp LPAR &kp C &kp O &kp L &kp U &kp M &kp N &kp N1 &kp COMMA &kp SPACE &kp C &kp O &kp L &kp U &kp M &kp N &kp N2 &kp RPAR &kp SPACE &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N1 &kp SQT &kp COMMA &kp SPACE &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N2 &kp SQT &kp RPAR>;
-            label = "SQL_INSERT_INTO_HAHAHAHHA";
+            label = "SQL_INSERT";
         };
 
         SQL_OVER: SQL_OVER {
@@ -121,11 +121,11 @@
 
         SQL {
             bindings = <
-&kp TILDE  &trans      &trans            &trans       &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans      &kp F9     &kp F10      &trans
-&trans     &trans      &trans            &trans       &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &trans      &SQL_SELECT_FROM  &trans       &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset  &trans            &bootloader  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans      &trans            &trans       &trans  &trans    &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &trans      &trans            &trans       &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans       &kp F9     &kp F10      &trans
+&trans     &trans      &trans            &trans       &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &SQL_INSERT  &kp F12    &kp UNDER    &kp PLUS
+&trans     &trans      &SQL_SELECT_FROM  &trans       &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans       &trans     &kp LBRC     &kp RBRC
+&trans     &sys_reset  &trans            &bootloader  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset   &soft_off  &bootloader  &trans
+&trans     &trans      &trans            &trans       &trans  &trans    &mkp LCLK        &trans  &trans  &trans       &trans     &trans
             >;
 
             display-name = "layer2";
