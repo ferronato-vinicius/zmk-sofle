@@ -45,8 +45,23 @@
         compatible = "zmk,combos";
 
         softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            bindings = <&to 4>;
+            key-positions = <56 52>;
+        };
+
+        sql-select {
+            bindings = <&sqlselectfrom>;
+            key-positions = <28 16>;
+            layers = <2>;
+        };
+    };
+
+    macros {
+        sqlselectfrom: sqlselectfrom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E)>;
+            label = "SQLSELECTFROM";
         };
     };
 
@@ -107,11 +122,11 @@
 
         SETTINGS {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bl BL_INC  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&trans  &trans        &trans        &trans        &trans        &trans          &bl BL_DEC  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &bl BL_TOG      &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans        &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bl BL_INC  &trans     &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans        &trans          &bl BL_DEC  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans      &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &bl BL_TOG      &trans      &trans     &trans  &trans  &trans  &trans  &trans
+&to 1   &trans        &trans        &trans        &trans        &trans          &trans      &kp SPACE  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer4";
