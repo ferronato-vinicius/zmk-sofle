@@ -98,6 +98,9 @@
         };
     };
 
+    on-startup { bindings = <&RGB_PULSE>; };
+    on-wake    { bindings = <&RGB_PULSE>; };
+
     keymap {
         compatible = "zmk,keymap";
 
