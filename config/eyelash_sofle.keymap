@@ -53,7 +53,7 @@
         SQL_SELECT_FROM: SQL_SELECT_FROM {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E) &kp SPACE>;
+            bindings = <&rgb_ug RGB_ON &kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E) &kp SPACE &rgb_ug RGB_OFF>;
             label = "SQL_SELECT_FROM";
         };
     };
