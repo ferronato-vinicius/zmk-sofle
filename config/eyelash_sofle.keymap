@@ -49,6 +49,15 @@
         };
     };
 
+    macros {
+        SQL_SELECT_FROM: SQL_SELECT_FROM {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp RET &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp RET &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(E) &kp SPACE>;
+            label = "SQL_SELECT_FROM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -67,11 +76,11 @@
 
         KEYPAD {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5                  &kp PG_UP      &kp F6         &kp F7          &kp F8        &kp F9        &kp F10        &kp F11
-&trans     &kp GRAVE        &mkp LCLK       &kp LS(N9)            &kp LS(N0)             &kp SINGLE_QUOTE        &kp PAGE_DOWN  &kp LS(SLASH)  &kp N7          &kp N8        &kp N9        &kp BACKSPACE  &kp EQUAL
-&trans     &kp TILDE        &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(SINGLE_QUOTE)    &kp HOME       &kp MINUS      &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp PLUS       &kp RIGHT_BRACKET
-&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &rgb_ug RGB_SPI         &kp END        &kp LS(EQUAL)  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp F12        &trans
-&to 4      &trans           &trans          &trans                &trans                 &trans                  &mkp LCLK      &kp EQUAL      &kp UNDERSCORE  &kp N0        &trans        &trans
+&kp GRAVE  &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5                  &kp PG_UP      &kp F6         &kp F7              &kp F8        &kp F9        &kp F10        &kp F11
+&trans     &kp GRAVE        &mkp LCLK       &kp LS(N9)            &kp LS(N0)             &kp SINGLE_QUOTE        &kp PAGE_DOWN  &kp LS(SLASH)  &kp N7              &kp N8        &kp N9        &kp BACKSPACE  &kp EQUAL
+&trans     &kp TILDE        &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(SINGLE_QUOTE)    &kp HOME       &kp MINUS      &kp NUMBER_4        &kp N5        &kp NUMBER_6  &kp PLUS       &kp RIGHT_BRACKET
+&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &rgb_ug RGB_SPI         &kp END        &kp LS(EQUAL)  &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp F12        &trans
+&to 4      &trans           &trans          &trans                &trans                 &trans                  &mkp LCLK      &kp EQUAL      &kp LS(UNDERSCORE)  &kp N0        &trans        &trans
             >;
 
             display-name = "layer1";
