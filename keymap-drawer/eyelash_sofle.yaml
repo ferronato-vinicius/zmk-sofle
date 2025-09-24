@@ -53,7 +53,7 @@ layers:
   - {t: ., s: '>'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Ctl+F8
+  - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -117,7 +117,7 @@ layers:
   - '2'
   - '3'
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
   - {t: layer4, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
