@@ -125,8 +125,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(O) &kp LS(V) &kp LS(E) &kp LS(R) &kp SPACE &kp LPAR &kp LS(P) &kp LS(A) &kp LS(R) &kp LS(T) &kp LS(I) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp LS(O) &kp LS(R) &kp LS(D) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp RPAR>;
             label = "SQL_OVER";
-            wait-ms = <35>;
-            tap-ms = <40>;
         };
 
         sql_case_when: sql_case_when {
@@ -158,7 +156,7 @@
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U            &kp I      &kp O    &kp P      &kp BSLH
 &kp LEFT_SHIFT  &kp A      &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J            &kp K      &kp L    &kp SEMI   &kp APOS
 &kp LEFT_GUI    &kp Z      &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA  &kp DOT  &none      &kp ENTER
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp BACKSPACE    &bt BT_CLR_ALL   &kp SPACE  &kp RIGHT_SHIFT  &kp ENTER  &mo 2    &kp SLASH
+&kp LC(F8)      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp BACKSPACE    &kp CLCK         &kp SPACE  &kp RIGHT_SHIFT  &kp ENTER  &mo 2    &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -180,15 +178,15 @@
 
         SQL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans  &mo 1   &trans    &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp UP_ARROW    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT       &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &mo 1   &trans    &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer2";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         PYSPARK {
