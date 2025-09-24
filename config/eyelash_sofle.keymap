@@ -53,6 +53,11 @@
             key-positions = <62 50>;
             layers = <0>;
         };
+
+        bluetoohthclear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <7 59 51 12 35>;
+        };
     };
 
     macros {
