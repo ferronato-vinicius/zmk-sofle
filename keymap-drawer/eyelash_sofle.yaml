@@ -331,3 +331,5 @@ combos:
 - p: [62, 50]
   k: {t: layer2, h: toggle}
   l: [LAYER0]
+- p: [7, 59, 51, 12, 35]
+  k: BT CLR ALL
