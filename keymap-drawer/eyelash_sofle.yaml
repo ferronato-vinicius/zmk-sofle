@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - layer1
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - BT CLR ALL
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
