@@ -111,8 +111,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp LS(R) &kp LS(E) &kp LS(A) &kp LS(T) &kp LS(E) &kp SPACE &kp LS(T) &kp LS(A) &kp LS(B) &kp LS(L) &kp LS(E) &kp SPACE &kp LPAR &kp I &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp RPAR &kp RET &kp LS(U) &kp LS(S) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(D) &kp LS(E) &kp LS(L) &kp LS(T) &kp LS(A)>;
             label = "SQL_CREATE";
-            wait-ms = <50>;
-            tap-ms = <50>;
         };
 
         SQL_INSERT: SQL_INSERT {
@@ -120,8 +118,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp SPACE &kp LPAR &kp C &kp RPAR &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp SQT &kp RPAR>;
             label = "SQL_INSERT";
-            wait-ms = <35>;
-            tap-ms = <35>;
         };
 
         SQL_OVER: SQL_OVER {
@@ -136,7 +132,7 @@
         sql_case_when: sql_case_when {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp LS(A) &kp LS(S) &kp LS(E) &kp SPACE &kp RET &kp SPACE &kp SPACE &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp C &kp SPACE &kp LS(T) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp A &kp RET &kp LS(E) &kp L &kp S &kp E &kp SPACE &kp B &kp SPACE &kp LS(E) &kp LS(N) &kp LS(D)>;
+            bindings = <&kp LS(C) &kp LS(A) &kp LS(S) &kp LS(E) &kp SPACE &kp RET &kp SPACE &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp C &kp SPACE &kp LS(T) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp A &kp SPACE &kp RET &kp LS(E) &kp L &kp S &kp E &kp SPACE &kp B &kp SPACE &kp LS(E) &kp LS(N) &kp LS(D)>;
             label = "SQL_CASE_WHEN";
         };
     };
@@ -210,11 +206,11 @@
 
         SETTINGS {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &bl BL_INC  &trans     &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&trans  &trans        &trans        &trans          &trans        &trans          &bl BL_DEC  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &bt BT_CLR_ALL  &trans        &trans          &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &bl BL_SET 100  &bl BL_ON     &bl BL_TOG      &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&to 0   &trans        &trans        &trans          &trans        &trans          &trans      &kp SPACE  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4       &rgb_ug RGB_BRI  &trans     &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans          &trans        &trans             &rgb_ug RGB_BRD  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &bt BT_CLR_ALL  &trans        &trans             &rgb_ug RGB_SAD  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &bl BL_SET 100  &bl BL_ON     &rgb_ug RGB_TOG    &rgb_ug RGB_SAI  &trans     &trans  &trans  &trans  &trans  &trans
+&to 0   &trans        &trans        &trans          &trans        &trans             &trans           &kp SPACE  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer4";
