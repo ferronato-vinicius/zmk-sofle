@@ -46,6 +46,7 @@
         softoff {
             bindings = <&to 4>;
             key-positions = <56 52>;
+            layers = <0>;
         };
 
         force_sql {
@@ -54,9 +55,34 @@
             layers = <0>;
         };
 
-        bluetoohthclear {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <7 59 51 12 35>;
+        sql_select {
+            bindings = <&SQL_SELECT_FROM>;
+            key-positions = <28 16>;
+            layers = <2>;
+        };
+
+        sql_over {
+            bindings = <&SQL_OVER>;
+            key-positions = <23 43>;
+            layers = <2>;
+        };
+
+        sql_case_when {
+            bindings = <&sql_case_when>;
+            key-positions = <42 15>;
+            layers = <2>;
+        };
+
+        sql_create {
+            bindings = <&SQL_CREATE>;
+            key-positions = <42 17>;
+            layers = <2>;
+        };
+
+        sql_insert {
+            bindings = <&SQL_INSERT>;
+            key-positions = <22 46>;
+            layers = <2>;
         };
     };
 
@@ -83,7 +109,7 @@
         SQL_CREATE: SQL_CREATE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp LS(R) &kp LS(E) &kp LS(A) &kp LS(T) &kp LS(E) &kp SPACE &kp LS(T) &kp LS(A) &kp LS(B) &kp LS(L) &kp LS(E) &kp SPACE &kp LPAR &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp I &kp D &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp N &kp A &kp M &kp E &kp SPACE &kp LS(S) &kp LS(T) &kp LS(R) &kp LS(I) &kp LS(N) &kp LS(G) &kp COMMA &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp C &kp R &kp E &kp A &kp T &kp E &kp D &kp UNDER &kp A &kp T &kp SPACE &kp LS(T) &kp LS(I) &kp LS(M) &kp LS(E) &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(M) &kp LS(P) &kp RET &kp RPAR &kp RET &kp LS(U) &kp LS(S) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(D) &kp LS(E) &kp LS(L) &kp LS(T) &kp LS(A) &kp RET &kp LS(C) &kp LS(O) &kp LS(M) &kp LS(M) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp SQT &kp LS(M) &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp LS(D) &kp E &kp L &kp T &kp A &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E &kp D &kp SPACE &kp I &kp N &kp SPACE &kp LS(D) &kp A &kp T &kp A &kp B &kp R &kp I &kp C &kp K &kp S &kp MINUS &kp M &kp A &kp N &kp A &kp G &kp E &kp D &kp SPACE &kp S &kp T &kp O &kp R &kp A &kp G &kp E &kp SQT &kp RET>;
+            bindings = <&kp LS(C) &kp LS(R) &kp LS(E) &kp LS(A) &kp LS(T) &kp LS(E) &kp SPACE &kp LS(T) &kp LS(A) &kp LS(B) &kp LS(L) &kp LS(E) &kp SPACE &kp LPAR &kp I &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp RPAR &kp RET &kp LS(U) &kp LS(S) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(D) &kp LS(E) &kp LS(L) &kp LS(T) &kp LS(A)>;
             label = "SQL_CREATE";
             wait-ms = <50>;
             tap-ms = <50>;
@@ -92,7 +118,7 @@
         SQL_INSERT: SQL_INSERT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp A &kp B &kp L &kp E &kp UNDER &kp N &kp A &kp M &kp E &kp SPACE &kp LPAR &kp C &kp O &kp L &kp U &kp M &kp N &kp N1 &kp COMMA &kp SPACE &kp C &kp O &kp L &kp U &kp M &kp N &kp N2 &kp RPAR &kp SPACE &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N1 &kp SQT &kp COMMA &kp SPACE &kp SQT &kp V &kp A &kp L &kp U &kp E &kp N2 &kp SQT &kp RPAR>;
+            bindings = <&kp LS(I) &kp LS(N) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(T) &kp SPACE &kp LS(I) &kp LS(N) &kp LS(T) &kp LS(O) &kp SPACE &kp T &kp SPACE &kp LPAR &kp C &kp RPAR &kp RET &kp LS(V) &kp LS(A) &kp LS(L) &kp LS(U) &kp LS(E) &kp LS(S) &kp SPACE &kp LPAR &kp SQT &kp V &kp SQT &kp RPAR>;
             label = "SQL_INSERT";
             wait-ms = <35>;
             tap-ms = <35>;
@@ -101,17 +127,17 @@
         SQL_OVER: SQL_OVER {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(O) &kp LS(V) &kp LS(E) &kp LS(R) &kp SPACE &kp LPAR &kp LS(P) &kp LS(A) &kp LS(R) &kp LS(T) &kp LS(I) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp SPACE &kp LS(O) &kp LS(R) &kp LS(D) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp SPACE &kp RPAR &kp SPACE &kp LS(A) &kp LS(S)>;
+            bindings = <&kp LS(O) &kp LS(V) &kp LS(E) &kp LS(R) &kp SPACE &kp LPAR &kp LS(P) &kp LS(A) &kp LS(R) &kp LS(T) &kp LS(I) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp LS(O) &kp LS(R) &kp LS(D) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(B) &kp LS(Y) &kp SPACE &kp RPAR>;
             label = "SQL_OVER";
             wait-ms = <35>;
-            tap-ms = <35>;
+            tap-ms = <40>;
         };
 
-        SQL_ROWS_BETWEEN: SQL_ROWS_BETWEEN {
+        sql_case_when: sql_case_when {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(R) &kp LS(O) &kp LS(W) &kp LS(S) &kp SPACE &kp LS(B) &kp LS(E) &kp LS(T) &kp LS(W) &kp LS(E) &kp LS(E) &kp LS(N) &kp SPACE &kp LS(U) &kp LS(N) &kp LS(B) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(D) &kp LS(E) &kp LS(D) &kp SPACE &kp LS(P) &kp LS(R) &kp LS(E) &kp LS(C) &kp LS(E) &kp LS(D) &kp LS(I) &kp LS(N) &kp LS(G) &kp SPACE &kp LS(A) &kp LS(N) &kp LS(D) &kp SPACE &kp LS(C) &kp LS(U) &kp LS(R) &kp LS(R) &kp LS(E) &kp LS(N) &kp LS(T) &kp SPACE &kp LS(R) &kp LS(O) &kp LS(W)>;
-            label = "SQL_ROWS_BETWEEN";
+            bindings = <&kp LS(C) &kp LS(A) &kp LS(S) &kp LS(E) &kp SPACE &kp RET &kp SPACE &kp SPACE &kp LS(W) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp C &kp SPACE &kp LS(T) &kp LS(H) &kp LS(E) &kp LS(N) &kp SPACE &kp A &kp RET &kp LS(E) &kp L &kp S &kp E &kp SPACE &kp B &kp SPACE &kp LS(E) &kp LS(N) &kp LS(D)>;
+            label = "SQL_CASE_WHEN";
         };
     };
 
@@ -145,11 +171,11 @@
 
         KEYPAD {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5                  &kp PG_UP      &kp F6         &kp F7        &kp F8        &kp F9        &kp F10        &kp F11
-&trans     &kp GRAVE        &mkp LCLK       &kp LS(N9)            &kp LS(N0)             &kp SINGLE_QUOTE        &kp PAGE_DOWN  &kp LS(SLASH)  &kp N7        &kp N8        &kp N9        &kp BACKSPACE  &kp EQUAL
-&trans     &kp TILDE        &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(SINGLE_QUOTE)    &kp HOME       &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS       &kp RIGHT_BRACKET
-&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &rgb_ug RGB_SPI         &kp END        &kp LS(EQUAL)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12        &trans
-&to 4      &trans           &trans          &trans                &mo 1                  &trans                  &mkp LCLK      &kp EQUAL      &kp RS(A)     &kp N0        &trans        &trans
+&kp GRAVE  &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5                  &kp PG_UP      &kp F6         &kp F7          &kp F8        &kp F9        &kp F10        &kp F11
+&trans     &kp GRAVE        &mkp LCLK       &kp LS(N9)            &kp LS(N0)             &kp SINGLE_QUOTE        &kp PAGE_DOWN  &kp LS(SLASH)  &kp N7          &kp N8        &kp N9        &kp BACKSPACE  &kp EQUAL
+&trans     &kp TILDE        &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(SINGLE_QUOTE)    &kp HOME       &kp MINUS      &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp PLUS       &kp RIGHT_BRACKET
+&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &rgb_ug RGB_SPI         &kp END        &kp LS(EQUAL)  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp F12        &trans
+&to 4      &trans           &trans          &trans                &mo 1                  &trans                  &mkp LCLK      &kp EQUAL      &kp UNDERSCORE  &kp N0        &trans        &trans
             >;
 
             display-name = "layer1";
@@ -158,11 +184,11 @@
 
         SQL {
             bindings = <
-&kp TILDE  &trans      &trans            &trans       &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans       &kp F9     &kp F10      &trans
-&trans     &trans      &trans            &trans       &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &SQL_INSERT  &SQL_OVER  &kp UNDER    &kp PLUS
-&trans     &trans      &SQL_SELECT_FROM  &trans       &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans       &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset  &trans            &SQL_CREATE  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset   &soft_off  &bootloader  &trans
-&to 0      &trans      &trans            &trans       &trans  &trans    &mkp LCLK        &trans  &trans  &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &mo 1   &trans    &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer2";
